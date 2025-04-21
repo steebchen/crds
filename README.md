@@ -36,7 +36,7 @@ outputs/gcp/configconnector.yaml
 Full URL:
 
 ```
-https://github.com/steebchen/yaml-manifests/blob/main/outputs/gcp/configconnector.yaml
+https://raw.githubusercontent.com/steebchen/yaml-manifests/refs/heads/main/outputs/gcp/configconnector.yaml
 ```
 
 ## Manual Trigger
