@@ -1,0 +1,59 @@
+name: GCP Config Connector - Combine CRDs
+
+on:
+  schedule:
+    # Run once a day at midnight UTC
+    - cron: '0 0 * * *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  combine-yaml:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Combine YAML files
+        run: |
+          # Clone the k8s-config-connector repository
+          git clone https://github.com/GoogleCloudPlatform/k8s-config-connector.git temp-repo
+
+          # Create output directory if it doesn't exist
+          mkdir -p outputs/gcp
+
+          # Combine all YAML files from the crds directory
+          echo "# Combined CRDs from GoogleCloudPlatform/k8s-config-connector" > outputs/gcp/configconnector.yaml
+          echo "# Generated on $(date)" >> outputs/gcp/configconnector.yaml
+          echo "# Provided by https://github.com/steebchen/yaml-manifests" >> outputs/gcp/configconnector.yaml
+          echo "# Source: https://github.com/GoogleCloudPlatform/k8s-config-connector" >> outputs/gcp/configconnector.yaml
+          echo "" >> outputs/gcp/configconnector.yaml
+
+          # Find all YAML files and combine them with separator
+          find temp-repo/crds -name "*.yaml" | sort | while read file; do
+            echo "Processing $file"
+            echo "---" >> outputs/gcp/configconnector.yaml
+            cat "$file" >> outputs/gcp/configconnector.yaml
+            echo "" >> outputs/gcp/configconnector.yaml
+          done
+
+          # Clean up
+          rm -rf temp-repo
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit and push changes
+        run: |
+          # Check if there are changes
+          if git status --porcelain | grep .; then
+            git add outputs/gcp/configconnector.yaml
+            git commit -m "chore(bump): upgrade GCP Config Connector CRDs"
+            git push
+          else
+            echo "No changes to commit"
+          fi
