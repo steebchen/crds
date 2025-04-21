@@ -30,13 +30,13 @@ You can add the CRD specifications to IntelliJ IDEA for validation and code comp
 The combined CRDs file for Google Cloud Platform Kubernetes Config Connector is available at:
 
 ```
-outputs/gcp/configconnector.yaml
+outputs/cnrm.cloud.google.com/out.yaml
 ```
 
 Full URL:
 
 ```
-https://raw.githubusercontent.com/steebchen/yaml-manifests/refs/heads/main/outputs/gcp/configconnector.yaml
+https://raw.githubusercontent.com/steebchen/yaml-manifests/refs/heads/main/outputs/cnrm.cloud.google.com/out.yaml
 ```
 
 ## Manual Trigger
