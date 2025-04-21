@@ -27,7 +27,7 @@ jobs:
           # Combine all YAML files from the crds directory
           echo "# Combined CRDs from GoogleCloudPlatform/k8s-config-connector" > outputs/cnrm.cloud.google.com/out.yaml
           echo "# Generated on $(date)" >> outputs/cnrm.cloud.google.com/out.yaml
-          echo "# Provided by https://github.com/steebchen/yaml-manifests" >> outputs/cnrm.cloud.google.com/out.yaml
+          echo "# Provided by https://github.com/steebchen/crds" >> outputs/cnrm.cloud.google.com/out.yaml
           echo "# Source: https://github.com/GoogleCloudPlatform/k8s-config-connector" >> outputs/cnrm.cloud.google.com/out.yaml
           echo "" >> outputs/cnrm.cloud.google.com/out.yaml
 

@@ -1,6 +1,6 @@
-# YAML Manifests Collection
+# CRD Manifests Collection
 
-This repository contains a collection of combined YAML manifests from various sources, organized for easy use and reference. Currently, it includes:
+This repository contains a collection of combined CRD YAML manifests from various sources, organized for easy use and reference. Currently, it includes:
 
 1. GCP Config Connector - Combined Custom Resource Definitions (CRDs)
 
@@ -15,7 +15,7 @@ GitHub Actions workflows run on a schedule to:
 3. Combine them into single YAML files with proper separators (`---`)
 4. Push the combined files to this repository
 
-## Available Manifests
+## Available CRDs
 
 ### Using with IntelliJ IDEA
 
@@ -36,7 +36,7 @@ outputs/cnrm.cloud.google.com/out.yaml
 Full URL:
 
 ```
-https://raw.githubusercontent.com/steebchen/yaml-manifests/refs/heads/main/outputs/cnrm.cloud.google.com/out.yaml
+https://raw.githubusercontent.com/steebchen/crds/refs/heads/main/outputs/cnrm.cloud.google.com/out.yaml
 ```
 
 ## Manual Trigger
