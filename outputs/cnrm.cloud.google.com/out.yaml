@@ -1,5 +1,5 @@
 # Combined CRDs from GoogleCloudPlatform/k8s-config-connector
-# Generated on Thu Dec 18 00:19:19 UTC 2025
+# Generated on Fri Dec 19 00:22:35 UTC 2025
 # Provided by https://github.com/steebchen/crds
 # Source: https://github.com/GoogleCloudPlatform/k8s-config-connector
 
@@ -22,7 +22,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -284,7 +284,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -467,7 +467,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -867,7 +867,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -1020,7 +1020,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -2228,7 +2228,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -2555,7 +2555,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -4121,7 +4121,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -4574,7 +4574,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -5004,14 +5004,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                 type: object
@@ -5038,14 +5039,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               projectRef:
@@ -5774,14 +5776,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                 type: object
@@ -5808,14 +5811,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               projectRef:
@@ -6162,7 +6166,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -6793,7 +6797,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -7003,7 +7007,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -7183,7 +7187,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -7471,7 +7475,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -7649,7 +7653,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -8010,7 +8014,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -8197,7 +8201,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -8340,7 +8344,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -8489,7 +8493,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -8883,7 +8887,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -9227,7 +9231,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -9593,7 +9597,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -9791,7 +9795,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -10327,7 +10331,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -10695,7 +10699,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -10807,14 +10811,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               description:
@@ -11032,7 +11037,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -11304,7 +11309,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -11493,7 +11498,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -11640,7 +11645,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -12355,7 +12360,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -12519,7 +12524,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -12984,7 +12989,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -13189,7 +13194,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -13395,7 +13400,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -13895,7 +13900,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -14276,7 +14281,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -14890,7 +14895,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -15720,7 +15725,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -15990,7 +15995,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -16091,15 +16096,15 @@ spec:
                         - external
                       properties:
                         external:
-                          description: A reference to an externally-managed Compute
-                            Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                          description: The value of an externally managed ComputeNetwork
+                            resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                            or "projects/{{projectId}}/global/networks/{{networkId}}"
                           type: string
                         name:
-                          description: The `name` field of a `ComputeNetwork` resource.
+                          description: The name of a ComputeNetwork resource.
                           type: string
                         namespace:
-                          description: The `namespace` field of a `ComputeNetwork`
-                            resource.
+                          description: The namespace of a ComputeNetwork resource.
                           type: string
                       type: object
                     peeringMode:
@@ -16295,7 +16300,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -16995,7 +17000,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -17641,7 +17646,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -18105,7 +18110,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -18542,17 +18547,16 @@ spec:
                                 - external
                               properties:
                                 external:
-                                  description: A reference to an externally-managed
-                                    Compute Network resource. Should be in the format
-                                    `projects/{{projectID}}/global/networks/{{network}}`.
+                                  description: The value of an externally managed
+                                    ComputeNetwork resource. Should be in the format
+                                    "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                                    or "projects/{{projectId}}/global/networks/{{networkId}}"
                                   type: string
                                 name:
-                                  description: The `name` field of a `ComputeNetwork`
-                                    resource.
+                                  description: The name of a ComputeNetwork resource.
                                   type: string
                                 namespace:
-                                  description: The `namespace` field of a `ComputeNetwork`
-                                    resource.
+                                  description: The namespace of a ComputeNetwork resource.
                                   type: string
                               type: object
                             noExternalIPAddress:
@@ -19566,7 +19570,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -19796,7 +19800,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -20012,7 +20016,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -20197,7 +20201,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -20391,7 +20395,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -20663,7 +20667,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -21104,7 +21108,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -21974,7 +21978,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -22250,7 +22254,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -23026,7 +23030,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -23413,7 +23417,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -24113,7 +24117,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -24298,7 +24302,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -24498,7 +24502,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -24903,7 +24907,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -25975,7 +25979,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -26198,7 +26202,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -26386,7 +26390,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -27294,7 +27298,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -27495,7 +27499,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -28003,7 +28007,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -28535,7 +28539,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -28726,7 +28730,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -29048,7 +29052,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -29328,7 +29332,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -29512,7 +29516,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -29695,7 +29699,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -29914,7 +29918,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -30149,7 +30153,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -30401,7 +30405,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -30605,7 +30609,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -30814,7 +30818,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -31287,7 +31291,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -31569,7 +31573,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -32008,7 +32012,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -32251,7 +32255,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -33086,7 +33090,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -33453,7 +33457,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -33908,7 +33912,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -34285,7 +34289,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -34538,7 +34542,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -34783,7 +34787,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -35027,7 +35031,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -36548,7 +36552,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -36621,15 +36625,15 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally-managed Compute
-                              Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                            description: The value of an externally managed ComputeNetwork
+                              resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                              or "projects/{{projectId}}/global/networks/{{networkId}}"
                             type: string
                           name:
-                            description: The `name` field of a `ComputeNetwork` resource.
+                            description: The name of a ComputeNetwork resource.
                             type: string
                           namespace:
-                            description: The `namespace` field of a `ComputeNetwork`
-                              resource.
+                            description: The namespace of a ComputeNetwork resource.
                             type: string
                         type: object
                     required:
@@ -36829,15 +36833,15 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally-managed Compute
-                              Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                            description: The value of an externally managed ComputeNetwork
+                              resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                              or "projects/{{projectId}}/global/networks/{{networkId}}"
                             type: string
                           name:
-                            description: The `name` field of a `ComputeNetwork` resource.
+                            description: The name of a ComputeNetwork resource.
                             type: string
                           namespace:
-                            description: The `namespace` field of a `ComputeNetwork`
-                              resource.
+                            description: The namespace of a ComputeNetwork resource.
                             type: string
                         type: object
                         x-kubernetes-validations:
@@ -37035,7 +37039,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -37509,7 +37513,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -37812,7 +37816,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -39008,7 +39012,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -39242,7 +39246,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -39523,14 +39527,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                 type: object
@@ -39603,14 +39608,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                 type: object
@@ -39698,7 +39704,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -39833,14 +39839,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                 type: object
@@ -39950,7 +39957,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -40438,7 +40445,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -40884,7 +40891,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -41128,7 +41135,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -41423,7 +41430,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -41832,7 +41839,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -42108,7 +42115,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -42301,7 +42308,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -42642,7 +42649,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -42963,7 +42970,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -43515,7 +43522,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -44031,7 +44038,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -44351,7 +44358,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -44591,14 +44598,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   subnetworkRef:
@@ -44840,7 +44848,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -45270,15 +45278,15 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally-managed Compute
-                              Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                            description: The value of an externally managed ComputeNetwork
+                              resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                              or "projects/{{projectId}}/global/networks/{{networkId}}"
                             type: string
                           name:
-                            description: The `name` field of a `ComputeNetwork` resource.
+                            description: The name of a ComputeNetwork resource.
                             type: string
                           namespace:
-                            description: The `namespace` field of a `ComputeNetwork`
-                              resource.
+                            description: The namespace of a ComputeNetwork resource.
                             type: string
                         type: object
                       oauthScopes:
@@ -46448,15 +46456,15 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally-managed Compute
-                              Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                            description: The value of an externally managed ComputeNetwork
+                              resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                              or "projects/{{projectId}}/global/networks/{{networkId}}"
                             type: string
                           name:
-                            description: The `name` field of a `ComputeNetwork` resource.
+                            description: The name of a ComputeNetwork resource.
                             type: string
                           namespace:
-                            description: The `namespace` field of a `ComputeNetwork`
-                              resource.
+                            description: The namespace of a ComputeNetwork resource.
                             type: string
                         type: object
                       oauthScopes:
@@ -47242,7 +47250,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -47711,7 +47719,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -47939,7 +47947,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -48167,7 +48175,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -48358,7 +48366,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -48530,7 +48538,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -48706,7 +48714,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -48902,7 +48910,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -49367,7 +49375,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -49598,7 +49606,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -49976,7 +49984,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -50224,7 +50232,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -50450,7 +50458,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -50852,7 +50860,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -51047,7 +51055,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -51206,7 +51214,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -51349,7 +51357,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -51589,7 +51597,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -51900,7 +51908,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -52347,7 +52355,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -52538,7 +52546,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -52849,7 +52857,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -53059,7 +53067,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -53344,7 +53352,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -53628,7 +53636,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -54922,7 +54930,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -55700,7 +55708,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -55865,7 +55873,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -56257,7 +56265,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -56491,7 +56499,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -56697,7 +56705,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -56928,14 +56936,15 @@ spec:
                     - external
                   properties:
                     external:
-                      description: A reference to an externally-managed Compute Network
-                        resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                      description: The value of an externally managed ComputeNetwork
+                        resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                        or "projects/{{projectId}}/global/networks/{{networkId}}"
                       type: string
                     name:
-                      description: The `name` field of a `ComputeNetwork` resource.
+                      description: The name of a ComputeNetwork resource.
                       type: string
                     namespace:
-                      description: The `namespace` field of a `ComputeNetwork` resource.
+                      description: The namespace of a ComputeNetwork resource.
                       type: string
                   type: object
                 type: array
@@ -57055,7 +57064,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -57355,14 +57364,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               networkTier:
@@ -57807,10 +57817,8 @@ spec:
               selfLink:
                 type: string
               serviceName:
-                description: |-
-                  The internal fully qualified service name for this Forwarding Rule.
-
-                  This field is only used for INTERNAL load balancing.
+                description: The internal fully qualified service name for this Forwarding
+                  Rule. This field is only used for INTERNAL load balancing.
                 type: string
             type: object
         type: object
@@ -57844,7 +57852,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -58322,7 +58330,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -58497,7 +58505,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -58672,7 +58680,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -59044,7 +59052,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -60091,7 +60099,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -60308,7 +60316,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -61101,7 +61109,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -62147,7 +62155,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -62486,7 +62494,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -62845,7 +62853,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -63033,7 +63041,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -63257,7 +63265,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -63442,7 +63450,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -63662,7 +63670,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -63876,7 +63884,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -64180,7 +64188,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -64375,7 +64383,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -64789,7 +64797,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -64921,7 +64929,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -65237,7 +65245,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -65465,7 +65473,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -65803,7 +65811,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -66096,7 +66104,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -66337,7 +66345,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -66643,7 +66651,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -67114,7 +67122,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -67484,7 +67492,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -68119,7 +68127,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -68480,7 +68488,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -68600,7 +68608,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -68758,7 +68766,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -69171,7 +69179,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -69403,7 +69411,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -69580,7 +69588,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -69888,7 +69896,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -70080,7 +70088,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -70273,7 +70281,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -70645,7 +70653,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -70884,7 +70892,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -71153,7 +71161,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -71426,7 +71434,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -71623,7 +71631,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -71798,7 +71806,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -74535,7 +74543,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -74753,7 +74761,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -75139,7 +75147,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -75469,7 +75477,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -75659,7 +75667,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -77591,7 +77599,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -78529,7 +78537,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -78779,7 +78787,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -79382,7 +79390,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -79798,7 +79806,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -80807,7 +80815,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -81022,7 +81030,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -81281,7 +81289,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -81563,7 +81571,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -81789,7 +81797,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -82033,7 +82041,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -82172,14 +82180,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               numWorkers:
@@ -82368,7 +82377,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -82668,7 +82677,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -83321,7 +83330,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -83614,7 +83623,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -83816,7 +83825,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -83931,7 +83940,8 @@ spec:
                 items:
                   properties:
                     typeRef:
-                      description: Required aspect type for the entry type.
+                      description: A reference to an externally managed DataplexAspectType
+                        resource. Should be in the format "projects/{{projectID}}/locations/{{location}}/aspectTypes/{{aspecttypeID}}".
                       properties:
                         external:
                           description: A reference to an externally managed DataplexAspectType
@@ -84058,7 +84068,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -84311,7 +84321,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -84423,12 +84433,41 @@ spec:
                     description: Optional. The maximum duration after which the job
                       execution is expired.
                     type: string
-                  project:
+                  projectRef:
                     description: Optional. The project in which jobs are run. By default,
                       the project containing the Lake is used. If a project is provided,
                       the [ExecutionSpec.service_account][google.cloud.dataplex.v1.Task.ExecutionSpec.service_account]
                       must belong to this project.
-                    type: string
+                    oneOf:
+                    - not:
+                        required:
+                        - external
+                      required:
+                      - name
+                    - not:
+                        anyOf:
+                        - required:
+                          - name
+                        - required:
+                          - namespace
+                      required:
+                      - external
+                    properties:
+                      external:
+                        description: The `projectID` field of a project, when not
+                          managed by Config Connector.
+                        type: string
+                      kind:
+                        description: The kind of the Project resource; optional but
+                          must be `Project` if provided.
+                        type: string
+                      name:
+                        description: The `name` field of a `Project` resource.
+                        type: string
+                      namespace:
+                        description: The `namespace` field of a `Project` resource.
+                        type: string
+                    type: object
                   serviceAccountRef:
                     description: Required. Service account to use to execute a task.
                       If not provided, the default Compute service account for the
@@ -84737,8 +84776,6 @@ spec:
                     description: Required. Immutable. Trigger type of the user-specified
                       Task.
                     type: string
-                required:
-                - type
                 type: object
             required:
             - executionSpec
@@ -84932,7 +84969,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -85053,14 +85090,17 @@ spec:
                         type: string
                     type: object
                   schedule:
-                    description: 'Optional. Cron schedule (https://en.wikipedia.org/wiki/Cron)
-                      for running discovery periodically. Successive discovery runs
-                      must be scheduled at least 60 minutes apart. The default value
-                      is to run discovery every 60 minutes. To explicitly set a timezone
-                      to the cron tab, apply a prefix in the cron tab: "CRON_TZ=${IANA_TIME_ZONE}"
-                      or TZ=${IANA_TIME_ZONE}". The ${IANA_TIME_ZONE} may only be
-                      a valid string from IANA time zone database. For example, `CRON_TZ=America/New_York
-                      1 * * * *`, or `TZ=America/New_York 1 * * * *`.'
+                    description: |-
+                      Optional. Cron schedule (https://en.wikipedia.org/wiki/Cron) for
+                       running discovery periodically. Successive discovery runs must be
+                       scheduled at least 60 minutes apart. The default value is to run
+                       discovery every 60 minutes.
+
+                       To explicitly set a timezone to the cron tab, apply a prefix in the
+                       cron tab: "CRON_TZ=${IANA_TIME_ZONE}" or TZ=${IANA_TIME_ZONE}".
+                       The ${IANA_TIME_ZONE} may only be a valid string from IANA time zone
+                       database. For example, `CRON_TZ=America/New_York 1 * * * *`, or
+                       `TZ=America/New_York 1 * * * *`.
                     type: string
                 type: object
               displayName:
@@ -85226,7 +85266,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -85920,7 +85960,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -86817,7 +86857,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -87297,7 +87337,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -87606,7 +87646,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -89435,7 +89475,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -91391,7 +91431,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -91577,7 +91617,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -92103,7 +92143,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -92233,14 +92273,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   subnet:
@@ -92366,7 +92407,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -92559,7 +92600,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -93507,7 +93548,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -93736,7 +93777,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -93935,7 +93976,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -94143,7 +94184,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -94354,7 +94395,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -94605,7 +94646,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -94833,7 +94874,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -95042,7 +95083,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -95606,7 +95647,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -95840,7 +95881,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -96952,7 +96993,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -97175,7 +97216,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -97448,7 +97489,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -97672,7 +97713,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -98001,7 +98042,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -102191,7 +102232,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -102817,7 +102858,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -104307,7 +104348,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -104692,7 +104733,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -104885,7 +104926,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -105095,7 +105136,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -105494,7 +105535,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -105704,7 +105745,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -106690,7 +106731,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -106936,7 +106977,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -107073,7 +107114,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -108017,7 +108058,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -108228,7 +108269,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -108778,7 +108819,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -109043,7 +109084,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -109296,7 +109337,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -109490,7 +109531,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -109728,7 +109769,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -110180,7 +110221,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -110450,7 +110491,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -110663,7 +110704,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -111223,7 +111264,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -111406,7 +111447,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -111642,7 +111683,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -111985,7 +112026,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -112186,7 +112227,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -112352,7 +112393,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -112513,7 +112554,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -112704,7 +112745,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -112862,7 +112903,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -113039,7 +113080,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -113201,7 +113242,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -113413,7 +113454,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -113612,7 +113653,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -113936,7 +113977,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -114378,7 +114419,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -114549,7 +114590,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -114928,7 +114969,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -115507,7 +115548,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -116305,7 +116346,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -116963,7 +117004,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -117243,7 +117284,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -118001,7 +118042,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -118380,7 +118421,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -118527,7 +118568,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -118699,7 +118740,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -118875,7 +118916,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -119203,7 +119244,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -119418,7 +119459,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -119690,7 +119731,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -119905,7 +119946,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -120090,7 +120131,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -120244,7 +120285,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -120622,7 +120663,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -120871,7 +120912,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -121171,7 +121212,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -121327,7 +121368,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -121520,7 +121561,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -121715,7 +121756,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -122087,7 +122128,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -122268,7 +122309,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -122578,7 +122619,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -122718,7 +122759,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -122886,7 +122927,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -123933,7 +123974,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -124106,7 +124147,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -124325,7 +124366,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -124563,7 +124604,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -124741,7 +124782,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -124968,7 +125009,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -125674,7 +125715,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -125871,7 +125912,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -126038,7 +126079,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -126269,7 +126310,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -126472,7 +126513,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -126666,7 +126707,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -126885,7 +126926,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -127256,7 +127297,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -127463,7 +127504,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -127935,7 +127976,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -128262,7 +128303,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -128405,7 +128446,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -128605,7 +128646,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -128908,7 +128949,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -129197,7 +129238,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -129673,7 +129714,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -130091,7 +130132,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -130409,7 +130450,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -130651,7 +130692,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -131237,7 +131278,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -131645,7 +131686,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -131996,7 +132037,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -132093,16 +132134,16 @@ spec:
                                   - external
                                 properties:
                                   external:
-                                    description: A reference to an externally-managed
-                                      Compute Network resource. Should be in the format
-                                      `projects/{{projectID}}/global/networks/{{network}}`.
+                                    description: The value of an externally managed
+                                      ComputeNetwork resource. Should be in the format
+                                      "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                                     type: string
                                   name:
-                                    description: The `name` field of a `ComputeNetwork`
-                                      resource.
+                                    description: The name of a ComputeNetwork resource.
                                     type: string
                                   namespace:
-                                    description: The `namespace` field of a `ComputeNetwork`
+                                    description: The namespace of a ComputeNetwork
                                       resource.
                                     type: string
                                 type: object
@@ -132173,16 +132214,16 @@ spec:
                                   - external
                                 properties:
                                   external:
-                                    description: A reference to an externally-managed
-                                      Compute Network resource. Should be in the format
-                                      `projects/{{projectID}}/global/networks/{{network}}`.
+                                    description: The value of an externally managed
+                                      ComputeNetwork resource. Should be in the format
+                                      "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                                     type: string
                                   name:
-                                    description: The `name` field of a `ComputeNetwork`
-                                      resource.
+                                    description: The name of a ComputeNetwork resource.
                                     type: string
                                   namespace:
-                                    description: The `namespace` field of a `ComputeNetwork`
+                                    description: The namespace of a ComputeNetwork
                                       resource.
                                     type: string
                                 type: object
@@ -132539,7 +132580,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -132784,7 +132825,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -133050,14 +133091,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               port:
@@ -133330,7 +133372,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -133672,7 +133714,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -133862,7 +133904,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -134813,7 +134855,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -142912,7 +142954,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -143117,7 +143159,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -143426,7 +143468,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -143567,7 +143609,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -143857,7 +143899,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -144030,7 +144072,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -144615,7 +144657,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -145008,7 +145050,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -145223,7 +145265,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -145411,7 +145453,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -145524,14 +145566,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               overlaps:
@@ -145701,7 +145744,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -145781,14 +145824,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               projectRef:
@@ -146073,7 +146117,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -146269,7 +146313,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -146670,7 +146714,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -146845,14 +146889,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   containerClusterRef:
@@ -147193,14 +147238,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   containerClusterRef:
@@ -149711,7 +149757,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -150016,7 +150062,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -150259,7 +150305,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -150517,7 +150563,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -150768,7 +150814,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -151129,7 +151175,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -152050,7 +152096,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -152276,7 +152322,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -152611,7 +152657,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -152851,7 +152897,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -153332,7 +153378,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -154080,7 +154126,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -154270,7 +154316,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -154614,7 +154660,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -154949,7 +154995,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -155172,7 +155218,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -155367,14 +155413,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               nicType:
@@ -155979,14 +156026,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               nicType:
@@ -156438,7 +156486,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -156892,7 +156940,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -157234,7 +157282,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -157939,7 +157987,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -158722,7 +158770,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -159738,7 +159786,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -159888,7 +159936,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -160405,7 +160453,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -161330,7 +161378,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -162349,7 +162397,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -162779,7 +162827,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -163553,7 +163601,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -163722,7 +163770,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -164196,7 +164244,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -164718,7 +164766,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -164949,7 +164997,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -165130,7 +165178,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -165348,7 +165396,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -165518,7 +165566,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -165762,7 +165810,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/dcl2crd: "true"
@@ -166030,7 +166078,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -166188,15 +166236,15 @@ spec:
                         - external
                       properties:
                         external:
-                          description: A reference to an externally-managed Compute
-                            Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                          description: The value of an externally managed ComputeNetwork
+                            resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                            or "projects/{{projectId}}/global/networks/{{networkId}}"
                           type: string
                         name:
-                          description: The `name` field of a `ComputeNetwork` resource.
+                          description: The name of a ComputeNetwork resource.
                           type: string
                         namespace:
-                          description: The `namespace` field of a `ComputeNetwork`
-                            resource.
+                          description: The namespace of a ComputeNetwork resource.
                           type: string
                       type: object
                   required:
@@ -166527,15 +166575,15 @@ spec:
                         - external
                       properties:
                         external:
-                          description: A reference to an externally-managed Compute
-                            Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                          description: The value of an externally managed ComputeNetwork
+                            resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                            or "projects/{{projectId}}/global/networks/{{networkId}}"
                           type: string
                         name:
-                          description: The `name` field of a `ComputeNetwork` resource.
+                          description: The name of a ComputeNetwork resource.
                           type: string
                         namespace:
-                          description: The `namespace` field of a `ComputeNetwork`
-                            resource.
+                          description: The namespace of a ComputeNetwork resource.
                           type: string
                       type: object
                   required:
@@ -166755,7 +166803,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -167287,7 +167335,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -167514,7 +167562,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -167753,7 +167801,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -167945,7 +167993,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -168240,7 +168288,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -168569,6 +168617,14 @@ spec:
                                       description: Optional. Path to access on the
                                         HTTP server. Defaults to '/'.
                                       type: string
+                                    port:
+                                      description: Optional. Port number to access
+                                        on the container. Must be in the range 1 to
+                                        65535. If not specified, defaults to the exposed
+                                        port of the container, which is the value
+                                        of container.ports[0].containerPort.
+                                      format: int32
+                                      type: integer
                                   type: object
                                 initialDelaySeconds:
                                   description: Optional. Number of seconds after the
@@ -168688,6 +168744,14 @@ spec:
                                       description: Optional. Path to access on the
                                         HTTP server. Defaults to '/'.
                                       type: string
+                                    port:
+                                      description: Optional. Port number to access
+                                        on the container. Must be in the range 1 to
+                                        65535. If not specified, defaults to the exposed
+                                        port of the container, which is the value
+                                        of container.ports[0].containerPort.
+                                      format: int32
+                                      type: integer
                                   type: object
                                 initialDelaySeconds:
                                   description: Optional. Number of seconds after the
@@ -169103,16 +169167,16 @@ spec:
                                     - external
                                   properties:
                                     external:
-                                      description: A reference to an externally-managed
-                                        Compute Network resource. Should be in the
-                                        format `projects/{{projectID}}/global/networks/{{network}}`.
+                                      description: The value of an externally managed
+                                        ComputeNetwork resource. Should be in the
+                                        format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                                        or "projects/{{projectId}}/global/networks/{{networkId}}"
                                       type: string
                                     name:
-                                      description: The `name` field of a `ComputeNetwork`
-                                        resource.
+                                      description: The name of a ComputeNetwork resource.
                                       type: string
                                     namespace:
-                                      description: The `namespace` field of a `ComputeNetwork`
+                                      description: The namespace of a ComputeNetwork
                                         resource.
                                       type: string
                                   type: object
@@ -169368,7 +169432,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -170512,7 +170576,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -170946,7 +171010,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -171291,7 +171355,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -171835,7 +171899,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -172557,7 +172621,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -172776,7 +172840,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -172953,7 +173017,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -173187,7 +173251,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -173358,7 +173422,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -173524,7 +173588,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -173604,14 +173668,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               resourceID:
@@ -173701,7 +173766,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -173893,7 +173958,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -174089,7 +174154,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -174244,7 +174309,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -174417,7 +174482,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -174630,7 +174695,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -174947,7 +175012,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -175529,7 +175594,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -175752,7 +175817,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -176028,7 +176093,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -176472,7 +176537,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -176942,7 +177007,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -177690,7 +177755,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -177875,7 +177940,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -178416,15 +178481,15 @@ spec:
                           - external
                         properties:
                           external:
-                            description: A reference to an externally-managed Compute
-                              Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                            description: The value of an externally managed ComputeNetwork
+                              resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                              or "projects/{{projectId}}/global/networks/{{networkId}}"
                             type: string
                           name:
-                            description: The `name` field of a `ComputeNetwork` resource.
+                            description: The name of a ComputeNetwork resource.
                             type: string
                           namespace:
-                            description: The `namespace` field of a `ComputeNetwork`
-                              resource.
+                            description: The namespace of a ComputeNetwork resource.
                             type: string
                         type: object
                       pscConfig:
@@ -178714,7 +178779,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -178904,7 +178969,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -179159,7 +179224,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -179385,7 +179450,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -179567,7 +179632,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -179785,7 +179850,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -180187,7 +180252,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -180606,7 +180671,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -180790,7 +180855,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -180990,7 +181055,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -181207,7 +181272,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -181383,7 +181448,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -182017,7 +182082,7 @@ status:
   storedVersions: []
 
 ---
-# Copyright 2023 Google LLC
+# Copyright 2025 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -182035,7 +182100,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -182049,6 +182114,7 @@ spec:
     categories:
     - gcp
     kind: TagsLocationTagBinding
+    listKind: TagsLocationTagBindingList
     plural: tagslocationtagbindings
     shortNames:
     - gcptagslocationtagbinding
@@ -182075,27 +182141,29 @@ spec:
     name: v1alpha1
     schema:
       openAPIV3Schema:
+        description: TagsLocationTagBinding is the Schema for the TagsLocationTagBinding
+          API
         properties:
           apiVersion:
-            description: 'apiVersion defines the versioned schema of this representation
+            description: 'APIVersion defines the versioned schema of this representation
               of an object. Servers should convert recognized schemas to the latest
-              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#resources'
+              internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources'
             type: string
           kind:
-            description: 'kind is a string value representing the REST resource this
+            description: 'Kind is a string value representing the REST resource this
               object represents. Servers may infer this from the endpoint the client
-              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds'
+              submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds'
             type: string
           metadata:
             type: object
           spec:
+            description: TagsLocationTagBindingSpec defines the desired state of TagsLocationTagBinding
             properties:
               location:
-                description: |-
-                  Immutable. The geographic location where the transfer config should reside.
-                  Examples: US, EU, asia-northeast1. The default value is US.
+                description: The location for the resource being tagged.
                 type: string
               parentRef:
+                description: ParentRef is a reference to a parent resource.
                 oneOf:
                 - not:
                     required:
@@ -182123,11 +182191,11 @@ spec:
                     type: string
                 type: object
               resourceID:
-                description: Immutable. Optional. The service-generated name of the
-                  resource. Used for acquisition only. Leave unset to create a new
-                  resource.
+                description: The service-generated name of the resource. Used for
+                  acquisition only. Leave unset to create a new resource.
                 type: string
               tagValueRef:
+                description: TagsTagValueRef is a reference to a TagsTagValue resource.
                 oneOf:
                 - not:
                     required:
@@ -182144,14 +182212,14 @@ spec:
                   - external
                 properties:
                   external:
-                    description: 'Allowed value: string of the format `tagValues/{{value}}`,
-                      where {{value}} is the `name` field of a `TagsTagValue` resource.'
+                    description: A reference to an externally managed TagsTagValue
+                      resource. Should be in the format "tagValues/{{tagValueID}}".
                     type: string
                   name:
-                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
+                    description: The name of a TagsTagValue resource.
                     type: string
                   namespace:
-                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
+                    description: The namespace of a TagsTagValue resource.
                     type: string
                 type: object
             required:
@@ -182160,10 +182228,12 @@ spec:
             - tagValueRef
             type: object
           status:
+            description: TagsLocationTagBindingStatus defines the config connector
+              machine state of TagsLocationTagBinding
             properties:
               conditions:
-                description: Conditions represent the latest available observation
-                  of the resource's current state.
+                description: Conditions represent the latest available observations
+                  of the object's current state.
                 items:
                   properties:
                     lastTransitionTime:
@@ -182187,9 +182257,13 @@ spec:
                       type: string
                   type: object
                 type: array
+              externalRef:
+                description: A unique specifier for the TagsLocationTagBinding resource
+                  in GCP.
+                type: string
               name:
                 description: 'The generated id for the TagBinding. This is a string
-                  of the form: ''tagBindings/{full-resource-name}/{tag-value-name}''.'
+                  of the form: tagBindings/{full-resource-name}/{tag-value-name}.'
                 type: string
               observedGeneration:
                 description: ObservedGeneration is the generation of the resource
@@ -182197,6 +182271,7 @@ spec:
                   If this is equal to metadata.generation, then that means that the
                   current reported status reflects the most recent desired state of
                   the resource.
+                format: int64
                 type: integer
             type: object
         required:
@@ -182210,8 +182285,8 @@ status:
   acceptedNames:
     kind: ""
     plural: ""
-  conditions: []
-  storedVersions: []
+  conditions: null
+  storedVersions: null
 
 ---
 # Copyright 2025 Google LLC
@@ -182232,7 +182307,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -182340,14 +182415,14 @@ spec:
                   - external
                 properties:
                   external:
-                    description: 'Allowed value: string of the format `tagValues/{{value}}`,
-                      where {{value}} is the `name` field of a `TagsTagValue` resource.'
+                    description: A reference to an externally managed TagsTagValue
+                      resource. Should be in the format "tagValues/{{tagValueID}}".
                     type: string
                   name:
-                    description: 'Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names'
+                    description: The name of a TagsTagValue resource.
                     type: string
                   namespace:
-                    description: 'Namespace of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/'
+                    description: The namespace of a TagsTagValue resource.
                     type: string
                 type: object
             required:
@@ -182434,7 +182509,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -182629,7 +182704,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -182830,7 +182905,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -183064,7 +183139,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -183207,14 +183282,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   queueCount:
@@ -183292,15 +183368,15 @@ spec:
                         - external
                       properties:
                         external:
-                          description: A reference to an externally-managed Compute
-                            Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                          description: The value of an externally managed ComputeNetwork
+                            resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                            or "projects/{{projectId}}/global/networks/{{networkId}}"
                           type: string
                         name:
-                          description: The `name` field of a `ComputeNetwork` resource.
+                          description: The name of a ComputeNetwork resource.
                           type: string
                         namespace:
-                          description: The `namespace` field of a `ComputeNetwork`
-                            resource.
+                          description: The namespace of a ComputeNetwork resource.
                           type: string
                       type: object
                     queueCount:
@@ -183586,7 +183662,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -183886,7 +183962,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -184136,7 +184212,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -184295,7 +184371,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -184497,7 +184573,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -184701,7 +184777,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -185102,7 +185178,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -185563,7 +185639,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -186087,7 +186163,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -186540,7 +186616,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -186867,7 +186943,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -187088,7 +187164,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -187213,14 +187289,15 @@ spec:
                       - external
                     properties:
                       external:
-                        description: A reference to an externally-managed Compute
-                          Network resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                        description: The value of an externally managed ComputeNetwork
+                          resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                          or "projects/{{projectId}}/global/networks/{{networkId}}"
                         type: string
                       name:
-                        description: The `name` field of a `ComputeNetwork` resource.
+                        description: The name of a ComputeNetwork resource.
                         type: string
                       namespace:
-                        description: The `namespace` field of a `ComputeNetwork` resource.
+                        description: The namespace of a ComputeNetwork resource.
                         type: string
                     type: object
                   vmwareEngineNetworkRef:
@@ -187434,7 +187511,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -187710,7 +187787,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -188090,7 +188167,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -188440,7 +188517,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -188733,7 +188810,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -189070,7 +189147,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -189378,7 +189455,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -189802,7 +189879,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
@@ -189910,14 +189987,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               privateClusterConfig:
@@ -190253,14 +190331,15 @@ spec:
                   - external
                 properties:
                   external:
-                    description: A reference to an externally-managed Compute Network
-                      resource. Should be in the format `projects/{{projectID}}/global/networks/{{network}}`.
+                    description: The value of an externally managed ComputeNetwork
+                      resource. Should be in the format "https://www.googleapis.com/compute/{{version}}/projects/{{projectId}}/global/networks/{{networkId}}"
+                      or "projects/{{projectId}}/global/networks/{{networkId}}"
                     type: string
                   name:
-                    description: The `name` field of a `ComputeNetwork` resource.
+                    description: The name of a ComputeNetwork resource.
                     type: string
                   namespace:
-                    description: The `namespace` field of a `ComputeNetwork` resource.
+                    description: The namespace of a ComputeNetwork resource.
                     type: string
                 type: object
               privateClusterConfig:
@@ -190534,7 +190613,7 @@ apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
   annotations:
-    cnrm.cloud.google.com/version: 1.140.0
+    cnrm.cloud.google.com/version: 1.141.0
   creationTimestamp: null
   labels:
     cnrm.cloud.google.com/managed-by-kcc: "true"
